@@ -1,5 +1,5 @@
-import Navbar from '@/components/Navbar';
-import PostCard from '@/components/PostCard';
+import Navbar from '@/app/components/Navbar';
+import PostCard from '@/app/components/PostCard';
 import Image from 'next/image';
 
 export default function Home() {

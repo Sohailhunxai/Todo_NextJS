@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import React from 'react';
 
 const Navbar = () => {
   return (
@@ -11,8 +10,8 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="flex-none">
-          <Link href="/create" className=" btn btn-ghost">
-            Create Post
+          <Link href="/create" className=" btn ">
+            Create Todo
           </Link>
         </div>
       </div>
