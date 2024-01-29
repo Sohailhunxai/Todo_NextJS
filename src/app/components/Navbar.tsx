@@ -1,3 +1,4 @@
+import { BookOpenCheck } from 'lucide-react';
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -6,7 +7,7 @@ const Navbar = () => {
       <div className="container">
         <div className="flex-1">
           <Link href="/" className="btn">
-            Home
+            <BookOpenCheck color="blue" />
           </Link>
         </div>
         <div className="flex-none">

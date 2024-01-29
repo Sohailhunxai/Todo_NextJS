@@ -6,9 +6,10 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 
 interface FormPostProps {
   submit: SubmitHandler<FormInputPost>;
+  isEditing: boolean;
 }
 
-const FormPost: FC<FormPostProps> = ({ submit }) => {
+const FormPost: FC<FormPostProps> = ({ submit, isEditing }) => {
   const { register, handleSubmit } = useForm<FormInputPost>();
 
   return (
@@ -44,7 +45,7 @@ const FormPost: FC<FormPostProps> = ({ submit }) => {
       </select>
 
       <button type="submit" className="btn btn-primary w-full max-w-lg">
-        Create
+        {isEditing ? 'Update' : 'Create'}
       </button>
     </form>
   );
